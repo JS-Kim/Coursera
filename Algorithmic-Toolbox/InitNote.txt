@@ -1,0 +1,25 @@
+Programming environments for different languages
+
+C (gcc 5.2.1). File extensions: .c. Flags:
+
+gcc -pipe -O2 -std=c11
+------------
+C++ (g++ 5.2.1). File extensions: .cc, .cpp. Flags
+
+g++ -pipe -O2 -std=c++11
+
+If your C/C++ compiler does not recognize -std=c++11 flag try replacing it with -std=c++0x flag or compiling without this flag at all (all starter solutions can be compiled without it). On Linux and MacOS, you most probably have the required compiler. On Windows, you may use your favorite compiler or install, e.g., cygwin.
+-------------
+
+Java (Open JDK 7). File extensions: .java. No flags:
+
+javac
+------------
+Python 2 (CPython 2.7). File extensions: .py2 or .py (a file ending in .py needs to have a first line which is a comment containing 'python2'). No flags:
+
+python2
+
+------------
+Python 3 (CPython 3.4). File extensions: .py3 or .py (a file ending in .py needs to have a first line which is a comment containing 'python3'). No flags:
+
+python3
