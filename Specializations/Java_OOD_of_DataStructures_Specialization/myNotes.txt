@@ -1,7 +1,16 @@
 
 [Course 1] 
 
+Week2
 Graphical output: Creating GUIs and Displaying Data
 
 1. Using "Unfolding Maps"
 - APIs: http://unfoldingmaps.org/javadoc/
+
+2. Earthquake RSS feed: http://earthquake.usgs.gov/earthquakes/feed/v1.0
+--------------
+Week3
+* Points of Inheritance in OOP
+1. Keep common behavior in one class
+2. Split different behavior into separate classes
+3. Keep all of the objects in a single data structure
