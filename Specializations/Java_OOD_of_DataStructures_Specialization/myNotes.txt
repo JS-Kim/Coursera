@@ -24,6 +24,8 @@ Week3
 1. Follow exact runtime type of object to find method
 2. Must match compile time method signature to appropriate method in actual object's class
 
+* To resolve the compile error related to polymorphism
+--> "Casting": widening or narrowing
 
 
 
