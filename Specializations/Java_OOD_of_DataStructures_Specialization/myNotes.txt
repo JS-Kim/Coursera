@@ -14,3 +14,17 @@ Week3
 1. Keep common behavior in one class
 2. Split different behavior into separate classes
 3. Keep all of the objects in a single data structure
+
+* Compile Time Rules related to polymorphism
+1. Compiler Only knows reference type
+2. Can only look in reference type class for method
+3. Outputs a method signature
+
+* Runtime rules related to polymorphism
+1. Follow exact runtime type of object to find method
+2. Must match compile time method signature to appropriate method in actual object's class
+
+
+
+
+
