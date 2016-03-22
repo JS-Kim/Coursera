@@ -27,6 +27,8 @@ Week3
 * To resolve the compile error related to polymorphism
 --> "Casting": widening or narrowing
 
+* Narrow casting can cause "runtime error"
+--> You should use Runtime type check using "instanceof" (i.e., checking is-a relationship)
 
 
 
