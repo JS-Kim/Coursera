@@ -30,5 +30,42 @@ Week3
 * Narrow casting can cause "runtime error"
 --> You should use Runtime type check using "instanceof" (i.e., checking is-a relationship)
 
+Example of Polymorphism & dynamic binding
+
+public class Person {
+	public void method1() {
+		System.out.println("Person 1");
+	}
+	public void method2() {
+		System.out.println("Person 2");
+	}
+}
+
+public class Student extends Person {
+	public void method1() {
+		System.out.println("Student 1");	
+		super.method1();
+		method2();
+	}
+	public void method2() {
+		System.out.println("Student 2");
+	}
+}
+
+public class Undergrad extends Student {
+	public void methods2() {
+		System.out.println("Undergrad 2");
+	}
+}
+
+----
+in the main(),
+Person u = new Undergrad();
+u.method1();
+
+----
+outputs
+Student 1 -> Person 1 -> Undergrad 2
+
 
 
