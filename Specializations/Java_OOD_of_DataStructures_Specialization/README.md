@@ -1,5 +1,5 @@
 My work with Java Programming: Object-Oriented Design of Data Structures Specialization at Coursera
-This is not for earning certificates, meaning that I would like to take all coursera for free. So I am not sure how much I can get along with this for now.
+This is not for earning certificates, meaning that I would like to take all coursera for free. So I am not sure how much I can get along with this for now. Anyway, this is a great course even for refreshing what I already knew and learned regarding OOP in Java.
 
 -----------------------------
 https://www.coursera.org/specializations/java-object-oriented
