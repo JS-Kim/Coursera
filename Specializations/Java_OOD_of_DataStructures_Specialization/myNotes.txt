@@ -1,0 +1,72 @@
+
+[Course 1] 
+
+Week2
+Graphical output: Creating GUIs and Displaying Data
+
+1. Using "Unfolding Maps"
+- APIs: http://unfoldingmaps.org/javadoc/
+
+2. Earthquake RSS feed: http://earthquake.usgs.gov/earthquakes/feed/v1.0
+--------------
+Week3
+* Points of Inheritance in OOP
+1. Keep common behavior in one class
+2. Split different behavior into separate classes
+3. Keep all of the objects in a single data structure
+
+* Compile Time Rules related to polymorphism
+1. Compiler Only knows reference type
+2. Can only look in reference type class for method
+3. Outputs a method signature
+--> 'super' is binded at compile time
+
+* Runtime rules related to polymorphism
+1. Follow exact runtime type of object to find method
+2. Must match compile time method signature to appropriate method in actual object's class
+--> 'this', which is a calling object, is binded at runtime.
+
+* To resolve the compile error related to polymorphism
+--> "Casting": widening or narrowing
+
+* Narrow casting can cause "runtime error"
+--> You should use Runtime type check using "instanceof" (i.e., checking is-a relationship)
+
+--- Example of Polymorphism & dynamic binding ---
+public class Person {
+	public void method1() {
+		System.out.println("Person 1");
+	}
+	public void method2() {
+		System.out.println("Person 2");
+	}
+}
+
+public class Student extends Person {
+	public void method1() {
+		System.out.println("Student 1");	
+		super.method1(); //'super' is binded at compile time.
+		method2(); //implicitly, this.methods() --> 'this' is a calling object, which is Undergrad, binded at runtime.
+	}
+	public void method2() {
+		System.out.println("Student 2");
+	}
+}
+
+public class Undergrad extends Student {
+	public void methods2() {
+		System.out.println("Undergrad 2");
+	}
+}
+
+----
+in the main(),
+Person u = new Undergrad();
+u.method1();
+
+----
+outputs
+Student 1 -> Person 1 -> Undergrad 2
+
+
+
